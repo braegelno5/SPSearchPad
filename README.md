@@ -9,7 +9,6 @@ All data (and associated content) is placed in the Public Domain using the Publi
 All code is licensed under the MIT License (http://opensource.org/licenses/mit-license.php).
 
 In short: You may do with this software whatever you want.
-
  
 DISCLAIMER OF WARRANTY  
 --------------------------------------------- 
@@ -18,3 +17,8 @@ The entire risk as to the quality and performance of the Software is borne by yo
 Should the Software prove defective, you and not MUNIR HUSSEINI assume the entire cost of any service and repair.  
  
 MUNIR HUSSEINI IS NOT RESPONSIBLE FOR ANY INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES OF ANY CHARACTER INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF GOODWILL, WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER COMMERCIAL DAMAGES OR LOSSES. 
+
+Before you run the program or compile the code
+--------------------------------------------- 
+SP Search Pad utilizes types in the assemblies Microsoft.SharePoint and Microsoft.SharePoint.Search.
+I cannot supply these assemblies, so in order for the code to compile or to run, make sure the assemblies are available (e.g. in the GAC).

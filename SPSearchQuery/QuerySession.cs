@@ -114,16 +114,11 @@ namespace MunirHusseini.SPSearchPad
                                  StartRow = 0,
                                  Timeout = 10000,
                                  TrimDuplicates = true,
-                                 QueryText = @"SELECT 
-    zuletztVeroeffentlicht, Projektname, CompetenceTeam, 
-    CompetenceUnit, ClientUnit, Jahr, GeleisteteTage, AnzahlDokumente, 
-    Steckbrieftyp, Land, Sprache2, Dokumenttyp, Path, Rank, SiteName, 
-    Verschlagwortung, HitHighlightedProperties, HitHighlightedSummary, 
-    Unternehmen, Bilanzsumme 
-FROM Scope() 
-WHERE ""scope""='All Sites' 
-AND (owstaxIdTaxKeyword = '#0XXX') 
-ORDER BY Rank DESC"
+                                 QueryText = @"SELECT WorkId,Path,Title,Write,Author,HitHighlightedSummary,
+       HitHighlightedProperties,CollapsingStatus
+FROM Scope()
+WHERE FREETEXT(defaultproperties, 'SharePoint') 
+ORDER BY Rank Desc"
                              };
         }
 
